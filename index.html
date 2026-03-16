@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. AGGARWAL'S DENTAL CLINIC & IMPLANT CENTRE - New Delhi</title>
+    <meta name="description" content="Expert Dental Care & Advanced Implant Solutions in New Delhi. Compassionate and cutting-edge dentistry at DR. AGGARWAL'S DENTAL CLINIC & IMPLANT CENTRE.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #007BFF;
+            --secondary-teal: #20c997;
+            --text-dark-charcoal: #343a40;
+            --text-heading-black: #212529;
+            --bg-white: #FFFFFF;
+            --bg-light-grey: #f8f9fa;
+            --border-light-grey: #dee2e6;
+            --max-width: 1200px;
+        }
+
+        /* Base Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark-charcoal);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-heading-black);
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+        h1 { font-weight: 700; font-size: 2.5em; }
+        h2 { font-weight: 700; font-size: 2em; }
+        h3 { font-weight: 500; font-size: 1.5em; }
+        h4 { font-weight: 500; font-size: 1.2em; }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--secondary-teal);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1em;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--bg-white);
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-teal);
+            color: var(--bg-white);
+            box-shadow: 0 4px 8px rgba(32, 201, 151, 0.2);
+        }
+        .btn-secondary:hover {
+            background-color: #1a9e75;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(32, 201, 151, 0.3);
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 60px;
+        }
+        .section-heading h2 {
+            font-size: 2.5em;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-teal);
+            border-radius: 2px;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background-color: var(--bg-white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.4em;
+            color: var(--primary-blue);
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        .logo span {
+            color: var(--secondary-teal);
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links li a {
+            color: var(--text-dark-charcoal);
+            font-weight: 600;
+            padding: 5px 0;
+            position: relative;
+        }
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-teal);
+            transition: width 0.3s ease;
+        }
+        .nav-links li a:hover::after {
+            width: 100%;
+        }
+        .nav-toggle {
+            display: none;
+            font-size: 1.8em;
+            cursor: pointer;
+            color: var(--text-dark-charcoal);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('https://source.unsplash.com/featured/1600x900/?dental-clinic,modern,india');
+            background-size: cover;
+            background-position: center;
+            color: var(--bg-white);
+            text-align: center;
+            padding: 150px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: var(--bg-white);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #e0e0e0;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--bg-light-grey);
+            padding: 80px 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background-color: var(--bg-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        .service-card .icon {
+            font-size: 3.5em;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        .service-card:hover .icon {
+            color: var(--secondary-teal);
+        }
+        .service-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: var(--text-heading-black);
+        }
+        .service-card p {
+            font-size: 0.95em;
+            color: var(--text-dark-charcoal);
+            line-height: 1.5;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        .about-text h2 {
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        .about-text p {
+            font-size: 1.05em;
+        }
+
+        /* Meet Dr. Aggarwal Section */
+        .dr-aggarwal {
+            background-color: var(--bg-light-grey);
+            padding: 80px 0;
+        }
+        .dr-profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+        }
+        .dr-profile-img {
+            flex-basis: 300px;
+            max-width: 300px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .dr-profile-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .dr-profile-details {
+            flex: 2;
+            min-width: 300px;
+            max-width: 700px;
+            text-align: left;
+        }
+        .dr-profile-details h3 {
+            font-size: 2em;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        .dr-profile-details .expertise {
+            color: var(--secondary-teal);
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .dr-profile-details p {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 80px 0;
+            background-color: var(--bg-white);
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .review-card {
+            background-color: var(--bg-light-grey);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--primary-blue);
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .review-card .stars {
+            color: gold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .review-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .review-card .reviewer {
+            font-weight: 600;
+            color: var(--primary-blue);
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-light-grey);
+            padding: 80px 0;
+        }
+        .faq-accordion {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        .accordion-item {
+            margin-bottom: 15px;
+            border: 1px solid var(--border-light-grey);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .accordion-header {
+            background-color: var(--bg-white);
+            padding: 18px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-heading-black);
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: var(--bg-light-grey);
+        }
+        .accordion-header i {
+            font-size: 1.2em;
+            color: var(--primary-blue);
+            transition: transform 0.3s ease;
+        }
+        .accordion-header.active i {
+            transform: rotate(180deg);
+        }
+        .accordion-content {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background-color: var(--bg-white);
+            border-top: 1px solid var(--border-light-grey);
+        }
+        .accordion-content p {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 0;
+            color: var(--text-dark-charcoal);
+            font-size: 0.95em;
+        }
+
+        /* Opening Hours */
+        .opening-hours {
+            padding: 80px 0;
+            text-align: center;
+            background-color: var(--bg-white);
+        }
+        .hours-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            display: inline-block;
+            text-align: left;
+        }
+        .hours-list li {
+            font-size: 1.1em;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-light-grey);
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        .hours-list li span:first-child {
+            font-weight: 600;
+            color: var(--text-heading-black);
+        }
+        .hours-list li span:last-child {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--bg-light-grey);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .contact-info {
+            background-color: var(--bg-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .contact-info h3 {
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        .contact-info p i {
+            margin-right: 15px;
+            color: var(--secondary-teal);
+            font-size: 1.4em;
+            flex-shrink: 0;
+        }
+        .contact-info address {
+            font-style: normal;
+        }
+        .contact-map {
+            background-color: var(--bg-white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-height: 400px;
+        }
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        /* Appointment Form */
+        .appointment-form {
+            background-color: var(--bg-white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .appointment-form h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--text-heading-black);
+            font-size: 1.8em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark-charcoal);
+            font-size: 0.95em;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 12px 10px;
+            border: 1px solid var(--border-light-grey);
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em;
+            color: var(--text-dark-charcoal);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-group .error-message {
+            color: #dc3545;
+            font-size: 0.85em;
+            margin-top: 5px;
+            display: none; /* Hidden by default */
+        }
+        .form-group input.invalid,
+        .form-group select.invalid,
+        .form-group textarea.invalid {
+            border-color: #dc3545;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--text-heading-black);
+            color: #e0e0e0;
+            padding: 60px 0 20px;
+            font-size: 0.9em;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: var(--secondary-teal);
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .footer-col p, .footer-col address {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a {
+            color: #e0e0e0;
+            transition: color 0.3s ease;
+        }
+        .footer-col ul li a:hover {
+            color: var(--primary-blue);
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+        }
+        .footer-bottom p {
+            margin: 0;
+            color: #ccc;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 2.2em;
+            line-height: 60px;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08) translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .about-content, .dr-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .dr-profile-details {
+                text-align: center;
+            }
+            .about-image img, .dr-profile-img {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                display: none; /* Hidden by default on mobile */
+                gap: 10px;
+                padding-top: 15px;
+                text-align: center;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li {
+                width: 100%;
+                border-bottom: 1px solid var(--border-light-grey);
+                padding: 10px 0;
+            }
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+            .nav-links li a {
+                padding: 10px 0;
+                display: block;
+            }
+            .nav-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 25px; /* Adjust based on header padding */
+            }
+            .logo {
+                margin-bottom: 10px;
+                font-size: 1.6em;
+            }
+
+            .hero {
+                padding: 100px 20px;
+                min-height: 50vh;
+            }
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+
+            .section-heading h2 {
+                font-size: 2em;
+            }
+
+            .services-grid, .reviews-grid, .contact-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-card, .review-card, .contact-info {
+                margin-bottom: 20px;
+            }
+
+            .contact-map {
+                min-height: 300px;
+            }
+            .appointment-form {
+                padding: 30px 20px;
+            }
+            .footer-col {
+                text-align: center;
+            }
+            .footer-col ul {
+                display: inline-block; /* Center list items */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .hero p {
+                font-size: 0.9em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+            .logo {
+                font-size: 1.4em;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8em;
+                line-height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/918130085507" class="whatsapp-float" target="_blank" aria-label="WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">DR. AGGARWAL'S<span> DENTAL</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links" id="navbarNav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#dr-aggarwal">Meet Dr. Aggarwal</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#appointment" class="btn btn-secondary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1>Rediscover Your Confident Smile: Expert Dental Care & Advanced Implant Solutions in New Delhi.</h1>
+                <p>At DR. AGGARWAL'S, compassionate care meets cutting-edge dentistry. We've been dedicated to creating healthy, beautiful smiles for families in Uttam Nagar and beyond for over a decade. Experience the difference of a truly radiant smile.</p>
+                <a href="#appointment" class="btn btn-primary">Book an Appointment</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Specialized Dental Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Dental Implants</h3>
+                        <p>Permanent solutions for missing teeth, restoring function and aesthetics with advanced implant technology for a natural-looking smile.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Root Canal Therapy (RCT)</h3>
+                        <p>Gentle and effective treatment to save damaged teeth, relieving pain and preventing extraction with modern techniques.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-grin-alt"></i></div>
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Enhance your smile with teeth whitening, veneers, bonding, and smile makeovers designed to achieve your desired aesthetic.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3>General Check-ups & Cleanings</h3>
+                        <p>Routine examinations and professional cleanings essential for maintaining optimal oral health and preventing future dental issues.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-user-friends"></i></div>
+                        <h3>Orthodontics</h3>
+                        <p>Correct misaligned teeth and bite issues with braces, clear aligners (Invisalign), and other advanced orthodontic treatments for all ages.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-child"></i></div>
+                        <h3>Pediatric Dentistry</h3>
+                        <p>Specialized, friendly dental care for children, focusing on prevention, education, and creating positive dental experiences from a young age.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>About DR. AGGARWAL'S DENTAL CLINIC</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://source.unsplash.com/featured/800x600/?dental-clinic,professional,dentist" alt="Modern dental clinic interior">
+                    </div>
+                    <div class="about-text">
+                        <p>Welcome to DR. AGGARWAL'S DENTAL CLINIC & IMPLANT CENTRE, your trusted partner for comprehensive oral health in New Delhi. Located conveniently at 36, Main Bindapur Matiyala Rd, R-Extension, Vikas Vihar, New Uttam Nagar, Uttam Nagar, we are proud to serve our vibrant community with a commitment to excellence and patient-first care. Founded on the principle of delivering advanced, yet accessible, dental treatments, Dr. Aggarwal and our dedicated team combine expertise with state-of-the-art technology to ensure comfortable, effective, and lasting results. We believe in building lasting relationships with our patients, guiding them towards optimal dental wellness with transparency and compassion. Your smile is our passion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Dr. Aggarwal Section -->
+        <section class="dr-aggarwal" id="dr-aggarwal">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Meet Dr. Aggarwal</h2>
+                </div>
+                <div class="dr-profile">
+                    <div class="dr-profile-img">
+                        <img src="https://source.unsplash.com/featured/400x400/?professional,indian,male,dentist,portrait,smiling" alt="Dr. Aggarwal">
+                    </div>
+                    <div class="dr-profile-details">
+                        <h3>Dr. Aggarwal</h3>
+                        <span class="expertise">Expertise: Dental Implants, General & Cosmetic Dentistry</span>
+                        <p>Dr. Aggarwal leads our clinic with a decade of dedicated experience in creating healthy, beautiful smiles. Driven by a passion for dentistry and a commitment to continuous learning, Dr. Aggarwal combines a gentle approach with the latest dental innovations. Patients appreciate their meticulous attention to detail and ability to explain complex procedures in an understandable way, ensuring comfort and confidence throughout their treatment journey. Dr. Aggarwal believes in a holistic approach to oral health, understanding that a healthy smile contributes significantly to overall well-being. Their mission is to empower every patient with the knowledge and care they need to maintain optimal dental health for life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>What Our Patients Say</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"I came to Dr. Aggarwal for dental implants, and I couldn't be happier with the results. The entire process was explained clearly, and Dr. Aggarwal's expertise made me feel completely at ease. The staff is incredibly friendly, and the clinic is spotless. Highly recommend for any dental needs!"</p>
+                        <div class="reviewer">- Anjali Sharma</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"My kids actually enjoy going to the dentist now! Dr. Aggarwal has a wonderful way with children, making their check-ups fun and fear-free. The clinic at Uttam Nagar is very welcoming, and the preventative advice has been invaluable for our family's oral health."</p>
+                        <div class="reviewer">- Rohit Kumar</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"After years of discomfort, I finally decided on a root canal at Dr. Aggarwal's clinic. I was apprehensive, but the procedure was virtually painless. The cost was transparent, and the follow-up care was excellent. This is truly the best dental clinic in New Delhi!"</p>
+                        <div class="reviewer">- Priya Singh</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            How often should I visit the dentist? <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>For optimal oral health, we recommend visiting your dentist for a routine check-up and professional cleaning every six months. This allows us to detect and address potential issues early, preventing more serious problems down the line.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            What are dental implants? <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Dental implants are permanent solutions for missing teeth. They consist of a small titanium post that is surgically placed into the jawbone, acting as an artificial tooth root. A crown, bridge, or denture is then attached to this post, providing a stable, natural-looking replacement for missing teeth.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Is root canal treatment painful? <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Contrary to popular belief, modern root canal treatment is usually no more uncomfortable than a regular filling thanks to advanced techniques and effective local anesthesia. The procedure is designed to relieve the pain caused by an infected tooth, not cause it.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Do you offer pediatric dental services? <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we do! We offer specialized, friendly dental care for children of all ages. Our team is dedicated to creating positive dental experiences, focusing on prevention, education, and teaching good oral hygiene habits from a young age.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            What payment options are available? <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We strive to make quality dental care accessible. We accept various payment methods including cash, debit/credit cards, and online payments. Please contact our front desk to discuss specific payment plans or insurance inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opening Hours Section -->
+        <section class="opening-hours" id="hours">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Clinic Hours</h2>
+                </div>
+                <ul class="hours-list">
+                    <li><span>Monday - Saturday:</span> <span>10:00 AM - 2:00 PM & 5:00 PM - 9:00 PM</span></li>
+                    <li><span>Sunday:</span> <span>By Appointment Only</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Contact Us & Book an Appointment</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <address>36, Main Bindapur Matiyala Rd, R-Extension, Vikas Vihar, New Uttam Nagar, Uttam Nagar, New Delhi, Delhi, 110059</address></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+918130085507">081300 85507</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:lakshayaggarwal801@gmail.com">lakshayaggarwal801@gmail.com</a></p>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.077209798993!2d77.0371360753046!3d28.656910775654316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0b0d6118d09f%3A0x7d28c3046f2549a!2sDr.%20Aggarwal's%20Dental%20Clinic%20%26%20Implant%20Centre!5e0!3m2!1sen!2sin!4v1701388800000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Location of DR. AGGARWAL'S DENTAL CLINIC & IMPLANT CENTRE on Google Maps"></iframe>
+                    </div>
+                </div>
+
+                <div class="appointment-form" id="appointment">
+                    <h3>Book Your Appointment Today</h3>
+                    <form action="#" method="POST" id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                            <div class="error-message">Name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g., 9876543210">
+                            <div class="error-message">Please enter a valid 10-digit phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                            <div class="error-message">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date:</label>
+                            <input type="date" id="date" name="preferred_date" required>
+                            <div class="error-message">Preferred date is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time:</label>
+                            <input type="time" id="time" name="preferred_time" required>
+                            <div class="error-message">Preferred time is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for Visit:</label>
+                            <select id="reason" name="reason_for_visit" required>
+                                <option value="">Select a reason</option>
+                                <option value="Dental Implants">Dental Implants</option>
+                                <option value="Root Canal Therapy (RCT)">Root Canal Therapy (RCT)</option>
+                                <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                                <option value="General Check-ups & Cleanings">General Check-ups & Cleanings</option>
+                                <option value="Orthodontics">Orthodontics</option>
+                                <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="error-message">Please select a reason for your visit.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Appointment Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>DR. AGGARWAL'S DENTAL</h4>
+                <p>Expert Dental Care & Advanced Implant Solutions in New Delhi. Your smile is our passion.</p>
+                <address>
+                    36, Main Bindapur Matiyala Rd,<br>
+                    R-Extension, Vikas Vihar, New Uttam Nagar,<br>
+                    Uttam Nagar, New Delhi, Delhi, 110059
+                </address>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#dr-aggarwal">Meet Dr. Aggarwal</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> 081300 85507</p>
+                <p><i class="fas fa-envelope"></i> lakshayaggarwal801@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 2 PM & 5 PM - 9 PM</p>
+                <p><i class="fas fa-calendar-alt"></i> Sunday: By Appointment Only</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 DR. AGGARWAL'S DENTAL CLINIC & IMPLANT CENTRE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile nav if open
+                    const navBarNav = document.getElementById('navbarNav');
+                    if (navBarNav.classList.contains('active')) {
+                        navBarNav.classList.remove('active');
+                    }
+                });
+            });
+
+            // Mobile navigation toggle
+            const navToggle = document.getElementById('navToggle');
+            const navBarNav = document.getElementById('navbarNav');
+
+            navToggle.addEventListener('click', function() {
+                navBarNav.classList.toggle('active');
+            });
+
+            // FAQ Accordion
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.closest('.accordion-item');
+                    const content = item.querySelector('.accordion-content');
+                    const icon = header.querySelector('i');
+
+                    header.classList.toggle('active');
+                    if (header.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = '0';
+                    }
+                });
+            });
+
+            // Form validation (basic client-side)
+            const bookingForm = document.getElementById('bookingForm');
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(event) {
+                    let isValid = true;
+
+                    // Clear previous errors
+                    document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
+                    document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(el => el.classList.remove('invalid'));
+
+                    // Validate Name
+                    const nameInput = document.getElementById('name');
+                    if (!nameInput.value.trim()) {
+                        nameInput.classList.add('invalid');
+                        nameInput.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    // Validate Phone
+                    const phoneInput = document.getElementById('phone');
+                    if (!phoneInput.value.trim() || !/^[0-9]{10}$/.test(phoneInput.value.trim())) {
+                        phoneInput.classList.add('invalid');
+                        phoneInput.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    // Validate Email (optional, but if provided, should be valid)
+                    const emailInput = document.getElementById('email');
+                    if (emailInput.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) {
+                        emailInput.classList.add('invalid');
+                        emailInput.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    // Validate Date
+                    const dateInput = document.getElementById('date');
+                    if (!dateInput.value.trim()) {
+                        dateInput.classList.add('invalid');
+                        dateInput.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    // Validate Time
+                    const timeInput = document.getElementById('time');
+                    if (!timeInput.value.trim()) {
+                        timeInput.classList.add('invalid');
+                        timeInput.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    // Validate Reason for Visit
+                    const reasonSelect = document.getElementById('reason');
+                    if (!reasonSelect.value) {
+                        reasonSelect.classList.add('invalid');
+                        reasonSelect.nextElementSibling.style.display = 'block';
+                        isValid = false;
+                    }
+
+                    if (!isValid) {
+                        event.preventDefault(); // Stop form submission
+                    } else {
+                        alert('Appointment request submitted successfully! We will contact you shortly.');
+                        // In a real scenario, you would send this data to a server
+                        // For this static HTML, we just prevent default and show an alert.
+                        event.preventDefault();
+                        bookingForm.reset(); // Clear form after successful submission
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
